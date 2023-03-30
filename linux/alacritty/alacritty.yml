@@ -1,0 +1,26 @@
+# Font configurations
+font:
+  normal:
+    family: Hack #SourceCodePro
+    style: Regular
+  bold:
+    family: Hack #SourceCodePro
+    style: Bold
+  italic:
+    family: Hack #SourceCodePro
+    style: Italic
+  bold_italic:
+    family: Hack #SourceCodePro
+    style: BoldItalic
+  size: 11
+
+# Cursor configurations
+cursor:
+  style:
+    shape: Block
+    blinking: Off
+    blinking-interval: 750
+
+# Window configurations
+window:
+  opacity: 0.85

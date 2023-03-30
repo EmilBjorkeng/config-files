@@ -1,0 +1,80 @@
+window#waybar {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-family: monospace;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* sway/workspaces */
+.modules-left {
+    background-color: rgba(38, 38, 56, 0.7); 
+    margin: 5px;
+    padding: 1px 6px 0 6px;
+    border-radius: 10;
+}
+#workspaces button {
+	color: #FFFFFF;
+	font-weight: 900;
+	padding: 0 0;
+    margin: 0 4px;
+    border-radius: 0;
+    border: 2px solid transparent;
+    font-size: 1em;
+}
+#workspaces button.focused {
+    border-bottom: 2px solid #FFFFFF
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+	background: none;
+    border-bottom: 2px solid #00CFFF;
+}
+
+/* sway/mode */
+#mode {
+	margin-left: 1.2em;
+	font-size: 0.9em;
+}
+
+/* sway/window */
+#window {
+    background-color: rgba(38, 38, 56, 0.4);
+    margin: 5px;
+    border-radius: 10;
+    padding: 0 11px;
+    font-size: 1em;
+}
+window#waybar.empty #window {  
+    background:none;
+}
+
+/* modules-right */
+.modules-right {
+    background-color: rgba(38, 38, 56, 0.7); 
+    margin: 5px;
+    padding: 4px 2px;
+    border-radius: 10;
+    font-size: 1em;
+}
+.modules-right * {
+	padding: 0 10px;
+}
+
+/* disk and bettery */
+#disk,
+#battery {
+	color: #FFFFFF;
+}
+#disk.medium,
+#battery.medium {
+	color: #C5C544;
+}
+#disk.low,
+#battery.low {
+	color: #AA0404;
+}
+#battery.charging {
+	color: #8885E9;
+}

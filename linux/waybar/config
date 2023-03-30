@@ -1,0 +1,86 @@
+{
+	"position": "top",
+	"layer": "top",
+	"modules-left": [
+		"sway/workspaces",
+		"sway/mode"
+	],
+	"modules-center": ["sway/window"],
+	"modules-right": [
+		"network",
+		//"sway/language",
+        "disk",
+        "pulseaudio",
+		"battery",
+		"clock"
+	],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": " term",
+            "2": " code",
+            "3": " web",
+            "4": " chat",
+            "5": "5", 
+            "6": "6", 
+            "7": "7", 
+            "8": "8", 
+            "9": "9", 
+            "10": "_" 
+        }
+    },
+	"sway/window": {
+		"max-length": 50
+	},
+	"sway/mode": {
+		"format": "<span style=\"italic\">{}</span>"
+	},
+	"network": {
+		"format-disconnected": "Internet Disconnected",
+		"format": "{ipaddr}/{cidr}",
+		"tooltip": false,
+		"on-click": "alacritty --class floating -e nmtui"
+    },
+	"sway/language": {
+		"format": "{short} {variant}",
+		"format-alt": "{long} {variant}",
+		"tooltip": false
+		//"on-click": "swaymsg input '1:1:AT_Translated_Set_2_keyboard' xkb_switch_layout next"
+    },
+    "disk": {
+        "interval": 30,
+		"states": {
+			"medium": 75,
+			"low": 90
+		},
+        "format": "Mem:{percentage_free}%",
+        "path": "/",
+        "tooltip-format": "{used} / {total} Used"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "{volume}% ",
+        "format-icons": {
+            //"headphone": "",
+            //"headset": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+	"battery": {
+        "interval": 30,
+		"states": {
+			"medium": 30,
+			"low": 20
+		},
+		"format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+	},
+	"clock": {
+		"format-alt": "{:%a, %d. %b  %H:%M}"
+	}
+}

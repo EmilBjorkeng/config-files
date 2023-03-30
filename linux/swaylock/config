@@ -1,0 +1,27 @@
+ignore-empty-password
+indicator-caps-lock
+disable-caps-lock-text
+screenshots
+
+clock
+timestr=%H:%M
+datestr=%a %d/%m/%Y
+text-color=FFFFFF
+
+indicator
+indicator-radius=135
+indicator-thickness=7
+
+effect-blur=5x7
+effect-vignette=0.8:0.8
+
+text-clear-color=FFFFFF
+text-ver-color=FFFFFF
+text-wrong-color=FFFFFF
+text-caps-lock-color=FFFFFF
+
+line-uses-ring
+ring-color=262638
+key-hl-color=00CFFF
+inside-color=000000AA
+separator-color=0000000
